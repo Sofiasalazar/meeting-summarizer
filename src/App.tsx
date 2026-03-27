@@ -127,7 +127,7 @@ const App: React.FC = () => {
         {history.length > 0 && (
           <>
             {/* Desktop sidebar */}
-            <aside className="hidden lg:flex w-60 flex-shrink-0 border-r border-[#262626] bg-[#0A0A0A]">
+            <aside className="hidden lg:flex w-60 max-w-60 flex-shrink-0 overflow-hidden border-r border-[#262626] bg-[#0A0A0A]">
               <HistorySidebar
                 entries={history}
                 activeId={activeEntryId}

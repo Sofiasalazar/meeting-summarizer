@@ -18,7 +18,7 @@ export const HistorySidebar: React.FC<Props> = ({
   onNew,
 }) => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full w-full overflow-hidden">
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#262626]">
         <h3 className="text-[13px] font-semibold text-[#F5F5F5]">History</h3>
         <button
@@ -47,8 +47,8 @@ export const HistorySidebar: React.FC<Props> = ({
                     : 'hover:bg-[#141414] border-l-2 border-transparent'
                 }`}
               >
-                <div className="flex-1 min-w-0">
-                  <p className="text-[13px] text-[#d4d4d4] truncate">
+                <div className="flex-1 min-w-0 overflow-hidden">
+                  <p className="text-[13px] text-[#d4d4d4] truncate block max-w-full">
                     {entry.transcriptPreview}
                   </p>
                   <div className="flex items-center gap-1 mt-1">
