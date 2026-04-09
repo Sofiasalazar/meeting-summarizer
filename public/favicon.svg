@@ -1,10 +1,24 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="96" fill="#0A0A0A"/>
-  <rect x="96" y="128" width="320" height="280" rx="24" fill="none" stroke="#8b5cf6" stroke-width="28"/>
-  <line x1="152" y1="200" x2="360" y2="200" stroke="#F5F5F5" stroke-width="20" stroke-linecap="round"/>
-  <line x1="152" y1="252" x2="320" y2="252" stroke="#A3A3A3" stroke-width="16" stroke-linecap="round"/>
-  <line x1="152" y1="300" x2="340" y2="300" stroke="#A3A3A3" stroke-width="16" stroke-linecap="round"/>
-  <line x1="152" y1="348" x2="280" y2="348" stroke="#A3A3A3" stroke-width="16" stroke-linecap="round"/>
-  <circle cx="400" cy="400" r="80" fill="#0A0A0A" stroke="#84cc16" stroke-width="24"/>
-  <path d="M370 400 L395 425 L430 375" fill="none" stroke="#84cc16" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#000000"/>
+  <!-- HUGE Chat bubble (violet gradient) — upper-left, dominant -->
+  <rect x="20" y="40" width="360" height="260" rx="50" fill="url(#grad)"/>
+  <polygon points="80,300 140,300 60,400" fill="url(#grad)"/>
+  <!-- Chat lines -->
+  <rect x="70" y="110" width="200" height="20" rx="10" fill="#000000"/>
+  <rect x="70" y="160" width="260" height="20" rx="10" fill="#000000"/>
+  <rect x="70" y="210" width="160" height="20" rx="10" fill="#000000"/>
+  <!-- Robot (lime green, bottom-right, smaller) -->
+  <rect x="280" y="330" width="190" height="120" rx="32" fill="none" stroke="#84cc16" stroke-width="24"/>
+  <circle cx="345" cy="390" r="14" fill="#84cc16"/>
+  <circle cx="415" cy="390" r="14" fill="#84cc16"/>
+  <rect x="367" y="278" width="16" height="55" rx="8" fill="#84cc16"/>
+  <circle cx="375" cy="262" r="26" fill="#84cc16"/>
+  <circle cx="375" cy="262" r="12" fill="#000000"/>
 </svg>
